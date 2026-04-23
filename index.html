@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kristen Mikeska — Digital Communications</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="main-nav">
+    <a href="#home" class="nav-name">Kristen Mikeska</a>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#portfolio">Work</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="hero-greeting">Digital Communications Professional</p>
+      <h1>Kristen<br>Mikeska</h1>
+      <p class="hero-tagline">I turn strategy into content that actually works — social media, publication design, web development, and brand communications.</p>
+      <div class="hero-ctas">
+        <a href="#portfolio" class="btn">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-roles">
+        <span>Jump to:</span>
+        <button class="role-pill" onclick="filterAndScroll('social')">Social Media</button>
+        <button class="role-pill" onclick="filterAndScroll('publication')">Publication Design</button>
+        <button class="role-pill" onclick="filterAndScroll('web')">Web Development</button>
+        <button class="role-pill" onclick="filterAndScroll('graphic')">Graphic Design</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATS STRIP ── -->
+  <div class="stats-strip">
+    <div class="stat-item">
+      <div class="stat-top"><span class="stat-number" data-target="500">0</span><span class="stat-suffix">%</span></div>
+      <span class="stat-label">Follower Increase</span>
+    </div>
+    <div class="stat-item">
+      <div class="stat-top"><span class="stat-number" data-target="402">0</span><span class="stat-suffix">%</span></div>
+      <span class="stat-label">More Interactions</span>
+    </div>
+    <div class="stat-item">
+      <div class="stat-top"><span class="stat-number" data-target="111">0</span><span class="stat-suffix">%</span></div>
+      <span class="stat-label">Views Growth in 28 Days</span>
+    </div>
+    <div class="stat-item">
+      <div class="stat-top"><span class="stat-number" data-target="72">0</span><span class="stat-suffix">K</span></div>
+      <span class="stat-label">Views in One Month</span>
+    </div>
+    <div class="stat-item">
+      <div class="stat-top"><span class="stat-number" data-target="36">0</span><span class="stat-suffix">K+</span></div>
+      <span class="stat-label">Newsletter Readers</span>
+    </div>
+    <div class="stat-item">
+      <div class="stat-top"><span class="stat-number" data-target="20">0</span><span class="stat-suffix">+</span></div>
+      <span class="stat-label">Publications Designed</span>
+    </div>
+  </div>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section about-section">
+    <div class="about-inner">
+
+      <div class="about-photo-col">
+        <div class="about-photo">
+          <img src="assets/Headshot.png" alt="Kristen Mikeska">
+        </div>
+      </div>
+
+      <div class="about-text-col">
+        <p class="section-tag">About Me</p>
+        <h2>Strategy. Design.<br>Content. Repeat.</h2>
+        <p>I'm Kristen — a Digital Communications Coordinator based in Temple, TX. On any given week I'm writing content strategy, designing newspaper layouts, editing hundreds of photos, maintaining websites, and producing video. Then doing it again.</p>
+        <p>My degree is in psychology, which wasn't a detour. Understanding how people process information and what actually makes them stop and pay attention shapes everything from a caption to a page layout to a site redesign. This portfolio is hand-coded in HTML and CSS, and I think that says more than a resume line ever could.</p>
+        <div class="edu-badge">
+          <strong>SNHU</strong> &nbsp;·&nbsp; B.A. Psychology &nbsp;·&nbsp; GPA 3.9 / 4.0 &nbsp;·&nbsp; Expected Dec 2025
+        </div>
+      </div>
+
+      <div class="skills-panel">
+        <div class="skill-group">
+          <h4>Social &amp; Strategy</h4>
+          <div class="skill-tags">
+            <span>Social Media Strategy</span>
+            <span>Meta Business Suite</span>
+            <span>Facebook Insights</span>
+            <span>Content Calendars</span>
+            <span>Campaign Management</span>
+            <span>Analytics &amp; Reporting</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Design &amp; Print</h4>
+          <div class="skill-tags">
+            <span>Adobe Photoshop</span>
+            <span>Canva</span>
+            <span>QuarkXPress</span>
+            <span>InDesign</span>
+            <span>Publication Layout</span>
+            <span>Branding</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Web &amp; Code</h4>
+          <div class="skill-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>WordPress</span>
+            <span>Website Maintenance</span>
+            <span>Email Newsletter Design</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Video &amp; Content</h4>
+          <div class="skill-tags">
+            <span>CapCut</span>
+            <span>Video Editing</span>
+            <span>Storytelling</span>
+            <span>Copywriting</span>
+            <span>Event Coverage</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PORTFOLIO ── -->
+  <section id="portfolio" class="section portfolio-section">
+    <div class="portfolio-header">
+      <p class="section-tag">My Work</p>
+      <h2>What I've Built</h2>
+      <p class="portfolio-intro">Hiring for a specific role? Use the filters to jump straight to what's relevant.</p>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All Work</button>
+      <button class="filter-btn" data-filter="social">Social Media</button>
+      <button class="filter-btn" data-filter="publication">Publication Design</button>
+      <button class="filter-btn" data-filter="web">Web Development</button>
+      <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolio-grid">
+
+      <!-- ─── SOCIAL MEDIA ─── -->
+      <div class="section-divider" data-section="social">
+        <div class="sd-label">Social Media</div>
+        <p class="sd-desc">Facebook strategy, content creation, and analytics — managing SPJST and Czech Heritage Museum platforms from the ground up.</p>
+      </div>
+
+      <div class="portfolio-card full stats-showcase" data-category="social">
+        <div class="showcase-inner">
+          <div class="showcase-top">
+            <span class="card-cat">Social Media Strategy</span>
+            <h3>Facebook Performance: Before &amp; After</h3>
+            <p class="showcase-sub">Oct 2024–Jan 2025 (baseline, before I took over) vs. Jan 2025–2026</p>
+          </div>
+          <div class="showcase-body">
+            <div class="showcase-before">
+              <div class="period-badge">Before</div>
+              <div class="kpi-stack">
+                <div class="kpi">
+                  <span class="kpi-n">~7.4K</span>
+                  <span class="kpi-l">avg monthly views<br><em>(37K over 5 months)</em></span>
+                </div>
+                <div class="kpi">
+                  <span class="kpi-n">56</span>
+                  <span class="kpi-l">followers</span>
+                </div>
+                <div class="kpi">
+                  <span class="kpi-n">~2.8K</span>
+                  <span class="kpi-l">total interactions</span>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-chart">
+              <div class="chart-row">
+                <span class="chart-label">Monthly Views</span>
+                <div class="chart-bars">
+                  <div class="chart-bar bar-b" style="--w: 10%"><span>7.4K</span></div>
+                  <div class="chart-bar bar-a" style="--w: 100%"><span>72K peak</span></div>
+                </div>
+              </div>
+              <div class="chart-row">
+                <span class="chart-label">Followers</span>
+                <div class="chart-bars">
+                  <div class="chart-bar bar-b" style="--w: 10%"><span>56</span></div>
+                  <div class="chart-bar bar-a" style="--w: 90%"><span>500+</span></div>
+                </div>
+              </div>
+              <div class="chart-row">
+                <span class="chart-label">Interactions</span>
+                <div class="chart-bars">
+                  <div class="chart-bar bar-b" style="--w: 13%"><span>2.8K</span></div>
+                  <div class="chart-bar bar-a" style="--w: 100%"><span>20K</span></div>
+                </div>
+              </div>
+              <div class="chart-legend">
+                <span class="legend-b">&#9632; Before</span>
+                <span class="legend-a">&#9632; After</span>
+              </div>
+            </div>
+            <div class="showcase-after">
+              <div class="period-badge after">After</div>
+              <div class="kpi-stack">
+                <div class="kpi">
+                  <span class="kpi-n hi">72K</span>
+                  <span class="kpi-l">peak monthly views<br><em>(March 2026)</em></span>
+                </div>
+                <div class="kpi">
+                  <span class="kpi-n hi">500+</span>
+                  <span class="kpi-l">followers</span>
+                </div>
+                <div class="kpi">
+                  <span class="kpi-n hi">20K</span>
+                  <span class="kpi-l">total interactions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-pills">
+            <span>+500% followers</span>
+            <span>+402% interactions</span>
+            <span>+357% views</span>
+            <span>72K views in March 2026</span>
+            <span>111% views growth in 28 days</span>
+            <span>20K views on a single post</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SPJST top posts -->
+      <div class="portfolio-card" data-category="social">
+        <img src="assets/social/spjst-post1.png" alt="SPJST top post — 32.8K views" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-cat">SPJST · Top Post</span>
+          <h3>#1 Most Viewed Post</h3>
+          <p>32.8K views · 22.7K viewers · 610 interactions. Historic Czech settlers photo — highest-performing post on the page.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-category="social">
+        <img src="assets/social/spjst-post2.png" alt="SPJST post — 19.4K views" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-cat">SPJST · Top Post</span>
+          <h3>#2 Most Viewed Post</h3>
+          <p>19.4K views · 12.5K viewers · 359 interactions. Czech Heritage Month graphic — strong seasonal engagement campaign.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-category="social">
+        <img src="assets/social/spjst-post3.png" alt="SPJST post — 10.1K views" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-cat">SPJST · Top Post</span>
+          <h3>#3 Most Viewed Post</h3>
+          <p>10.1K views · 5.4K viewers · 183 interactions. 129th Anniversary celebration — event coverage driving strong reach.</p>
+        </div>
+      </div>
+
+      <!-- CHM stats showcase -->
+      <div class="portfolio-card full stats-showcase" data-category="social">
+        <div class="showcase-inner">
+          <div class="showcase-top">
+            <span class="card-cat">Social Media Strategy — Czech Heritage Museum</span>
+            <h3>CHM Facebook: Before &amp; After</h3>
+            <p class="showcase-sub">Year before (Jan 2024–Feb 2025, before I took over) vs. year after (Mar 2025–Jan 2026)</p>
+          </div>
+          <div class="showcase-body">
+            <div class="showcase-before">
+              <div class="period-badge">Before</div>
+              <div class="kpi-stack">
+                <div class="kpi">
+                  <span class="kpi-n">1.1K</span>
+                  <span class="kpi-l">interactions</span>
+                </div>
+                <div class="kpi">
+                  <span class="kpi-n">2.6K</span>
+                  <span class="kpi-l">page visits</span>
+                </div>
+                <div class="kpi">
+                  <span class="kpi-n">176</span>
+                  <span class="kpi-l">new followers</span>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-chart">
+              <div class="chart-row">
+                <span class="chart-label">Interactions</span>
+                <div class="chart-bars">
+                  <div class="chart-bar bar-b" style="--w: 21%"><span>1.1K</span></div>
+                  <div class="chart-bar bar-a" style="--w: 100%"><span>5.3K (+369%)</span></div>
+                </div>
+              </div>
+              <div class="chart-row">
+                <span class="chart-label">Page Visits</span>
+                <div class="chart-bars">
+                  <div class="chart-bar bar-b" style="--w: 39%"><span>2.6K</span></div>
+                  <div class="chart-bar bar-a" style="--w: 100%"><span>6.6K (+155%)</span></div>
+                </div>
+              </div>
+              <div class="chart-row">
+                <span class="chart-label">New Followers</span>
+                <div class="chart-bars">
+                  <div class="chart-bar bar-b" style="--w: 27%"><span>176</span></div>
+                  <div class="chart-bar bar-a" style="--w: 100%"><span>646 (+269%)</span></div>
+                </div>
+              </div>
+              <div class="chart-legend">
+                <span class="legend-b">&#9632; Before</span>
+                <span class="legend-a">&#9632; After</span>
+              </div>
+            </div>
+            <div class="showcase-after">
+              <div class="period-badge after">After</div>
+              <div class="kpi-stack">
+                <div class="kpi">
+                  <span class="kpi-n hi">5.3K</span>
+                  <span class="kpi-l">interactions<br><em>+369%</em></span>
+                </div>
+                <div class="kpi">
+                  <span class="kpi-n hi">6.6K</span>
+                  <span class="kpi-l">page visits<br><em>+155%</em></span>
+                </div>
+                <div class="kpi">
+                  <span class="kpi-n hi">646</span>
+                  <span class="kpi-l">new followers<br><em>+269%</em></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-pills">
+            <span>149.8K total views during tenure</span>
+            <span>+369% interactions</span>
+            <span>+269% new followers</span>
+            <span>+155% page visits</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHM top posts -->
+      <div class="portfolio-card" data-category="social">
+        <img src="assets/social/chm-post1.png" alt="CHM Svacina post — 13.7K views" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-cat">CHM · Top Post</span>
+          <h3>Sunday Afternoon Svacina Promo</h3>
+          <p>13.7K views · 7.8K viewers · 179 interactions · 9 link clicks. Top-performing post on the CHM page.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-category="social">
+        <img src="assets/social/chm-post2.png" alt="CHM Czech Heritage Month post — 8.9K views" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-cat">CHM · Top Post</span>
+          <h3>Czech Heritage Month</h3>
+          <p>8.9K views · 5.6K viewers · 148 interactions. Czech Heritage Month campaign — consistent reach across both managed pages.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-category="social">
+        <img src="assets/social/chm-post3.png" alt="CHM moving post — 7.7K views" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-cat">CHM · Top Post</span>
+          <h3>Museum Moving Announcement</h3>
+          <p>7.7K views · 4.8K viewers · 105 interactions. High-engagement community announcement post.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-category="social">
+        <img src="assets/social/chm-post4.png" alt="CHM Czech National Gala post" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-cat">CHM · Top Post</span>
+          <h3>Czech National Day Texas Gala</h3>
+          <p>171 shares · 27 comments. Event promotion that drove significant ticket sales — the Gala raised $3,000 and had strong attendance.</p>
+        </div>
+      </div>
+
+      <!-- ─── PUBLICATION DESIGN ─── -->
+      <div class="section-divider" data-section="publication">
+        <div class="sd-label">Publication Design</div>
+        <p class="sd-desc">Layout and design for the Vestnik newspaper, distributed to 36,000+ members — 20+ issues across 2025 and 2026.</p>
+      </div>
+
+      <div class="pub-group-label hidden">
+        <div class="pub-group-label-inner">
+          <h4>2026 Vestnik</h4>
+          <span>January – April 2026 &nbsp;·&nbsp; Distributed to 36,000+ members &nbsp;·&nbsp; Click any issue to view full spread</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="publication" data-project="car-show-2026">
+        <img src="assets/vestnik/2026carshowlayout-pg1.png" alt="2026 Car Show" loading="lazy">
+        <div class="project-title-bar">
+          <h4>2026 Car Show</h4>
+          <span>3-page spread &nbsp;·&nbsp; Has before &amp; after</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2026</span>
+          <h3>2026 Car Show</h3>
+          <p>Redesigned 3-page feature — expanded branding, editorial photography, and sponsor coverage. Compare to the 2024 original.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="publication" data-project="scholarships-2026">
+        <img src="assets/vestnik/scholarshiplayout-pg1-april2026.png" alt="2026 SPJST Scholarships" loading="lazy">
+        <div class="project-title-bar">
+          <h4>2026 SPJST Scholarships</h4>
+          <span>3-page spread &nbsp;·&nbsp; Has before &amp; after</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2026</span>
+          <h3>2026 SPJST Scholarships</h3>
+          <p>3-page April 2026 spread honoring scholarship recipients. Compare directly to the 2025 version to see the improvement.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="publication" data-project="valentines-2026">
+        <img src="assets/vestnik/2026vestnikvalentines-pg1.png" alt="2026 Vestnik Valentines" loading="lazy">
+        <div class="project-title-bar">
+          <h4>2026 Vestnik Valentines</h4>
+          <span>2-page spread &nbsp;·&nbsp; Has before &amp; after</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2026</span>
+          <h3>2026 Vestnik Valentines</h3>
+          <p>Annual Valentine's section — redesigned from the 2024 original with a warmer, more polished editorial layout.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="publication" data-project="anniversary-2026">
+        <img src="assets/vestnik/anniversarycelebration-march2026.png" alt="Anniversary Celebration March 2026" loading="lazy">
+        <div class="project-title-bar">
+          <h4>Anniversary Celebration</h4>
+          <span>March 2026</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2026</span>
+          <h3>Anniversary Celebration — March 2026</h3>
+          <p>Commemorative spread for an organizational milestone — designed to feel both historic and celebratory.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="publication" data-project="district7-2026">
+        <img src="assets/vestnik/district7rally-layout-april2026vestnik.png" alt="District 7 Rally April 2026" loading="lazy">
+        <div class="project-title-bar">
+          <h4>District 7 Rally</h4>
+          <span>April 2026 &nbsp;·&nbsp; Has before &amp; after</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2026</span>
+          <h3>District 7 Rally — April 2026</h3>
+          <p>Event recap spread for the April 2026 Vestnik. Compare to the earlier rally layout to see the progression.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="publication" data-project="tarok-2026">
+        <img src="assets/vestnik/2026taroktournament.png" alt="2026 Tarok Tournament" loading="lazy">
+        <div class="project-title-bar">
+          <h4>Tarok Tournament</h4>
+          <span>2026 &nbsp;·&nbsp; Has before &amp; after</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2026</span>
+          <h3>Tarok Tournament — 2026</h3>
+          <p>Revamped tournament coverage — compare to the before to see how the layout and visual quality evolved.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="publication" data-project="toca-2026">
+        <img src="assets/vestnik/tocalayout-april2026.png" alt="TOCA Layout April 2026" loading="lazy">
+        <div class="project-title-bar">
+          <h4>TOCA Layout</h4>
+          <span>April 2026</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2026</span>
+          <h3>TOCA Layout — April 2026</h3>
+          <p>Custom layout for the April 2026 issue with strong visual structure and consistent brand alignment throughout.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="publication" data-project="easter-2026">
+        <img src="assets/vestnik/czecheaster2026.png" alt="Czech Easter 2026 spread" loading="lazy">
+        <div class="project-title-bar">
+          <h4>Czech Easter Traditions</h4>
+          <span>2026 &nbsp;·&nbsp; Article &amp; layout</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2026</span>
+          <h3>Czech Easter Traditions</h3>
+          <p>Two-page spread on Czech Easter traditions — layout and original article written by Kristen.</p>
+        </div>
+      </div>
+
+
+      <div class="pub-group-label hidden">
+        <div class="pub-group-label-inner">
+          <h4>2025 Vestnik</h4>
+          <span>March – December 2025 &nbsp;·&nbsp; Distributed to 36,000+ members &nbsp;·&nbsp; Click any issue to view full spread</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card wide tall" data-category="publication" data-project="czmonth-2025">
+        <img src="assets/vestnik/1st Czech Month Activity.png" alt="Czech Heritage Month Activities" loading="lazy">
+        <div class="project-title-bar">
+          <h4>Czech Heritage Month Activities</h4>
+          <span>3-page activity set &nbsp;·&nbsp; Has before &amp; after</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2025</span>
+          <h3>Czech Heritage Month Activities</h3>
+          <p>Three-issue activity set plus prize designs for the Czech Heritage Month member engagement campaign.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="publication" data-project="gala-2025">
+        <img src="assets/vestnik/2025 Czech National Gala Spread.png" alt="2025 Czech National Gala" loading="lazy">
+        <div class="project-title-bar">
+          <h4>Czech National Gala</h4>
+          <span>2025 &nbsp;·&nbsp; Full-page feature</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2025</span>
+          <h3>Czech National Gala</h3>
+          <p>One of the year's flagship features in the Vestnik — full editorial spread covering the 2025 Czech National Gala.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="publication" data-project="royalty-christmas-2025">
+        <img src="assets/vestnik/Royalty Christmas Spread 12.08.png" alt="Royalty Christmas Parade Spread 2025" loading="lazy">
+        <div class="project-title-bar">
+          <h4>Royalty — Christmas Parade</h4>
+          <span>2025 &nbsp;·&nbsp; 1-page buildout</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2025</span>
+          <h3>Royalty — Christmas Parade</h3>
+          <p>One-page feature on the Royalty program's appearance at the 2025 Temple Christmas Parade.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="publication" data-project="showcase-2025">
+        <img src="assets/vestnik/Youth Showcase Spread 1.png" alt="Youth Showcase 2025" loading="lazy">
+        <div class="project-title-bar">
+          <h4>Youth Showcase</h4>
+          <span>5-page spread &nbsp;·&nbsp; Has before &amp; after</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2025</span>
+          <h3>Youth Showcase</h3>
+          <p>5-page spread — one of the most complex layouts produced for the Vestnik. The before/after comparison shows a dramatic transformation.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="publication" data-project="graduates-2025">
+        <img src="assets/vestnik/Graduates Spread 1.png" alt="Graduates 2025" loading="lazy">
+        <div class="project-title-bar">
+          <h4>Graduates</h4>
+          <span>2025 &nbsp;·&nbsp; 2-page spread</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2025</span>
+          <h3>Graduates Spread</h3>
+          <p>Celebratory layout honoring graduating members — portrait-driven with custom typographic styling across two pages.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="publication" data-project="summercamp-2025">
+        <img src="assets/vestnik/Summer Camp 6.23 1.png" alt="Summer Camp 2025" loading="lazy">
+        <div class="project-title-bar">
+          <h4>Summer Camp Coverage</h4>
+          <span>2025 &nbsp;·&nbsp; Has before &amp; after</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2025</span>
+          <h3>Summer Camp Coverage</h3>
+          <p>Event coverage layout — photo-edited 300–400 images per issue to get them publication-ready.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="publication" data-project="bbq-2025">
+        <img src="assets/vestnik/BBQ Spread 1.png" alt="BBQ Event 2025" loading="lazy">
+        <div class="project-title-bar">
+          <h4>BBQ Event</h4>
+          <span>2025 &nbsp;·&nbsp; Has before &amp; after</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2025</span>
+          <h3>BBQ Event Spread</h3>
+          <p>Event recap layout with custom typography and editorial photo placement — compare to the earlier version.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="publication" data-project="polka-2025">
+        <img src="assets/vestnik/2025 National Polka Festival.png" alt="National Polka Festival 2025" loading="lazy">
+        <div class="project-title-bar">
+          <h4>National Polka Festival</h4>
+          <span>2025</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2025</span>
+          <h3>National Polka Festival</h3>
+          <p>Event materials for the 2025 National Polka Festival — print and digital promotional suite.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="publication" data-project="retirement-2025">
+        <img src="assets/vestnik/Retirement Spread.png" alt="Retirement Spread 2025" loading="lazy">
+        <div class="project-title-bar">
+          <h4>Retirement Spread</h4>
+          <span>2025 &nbsp;·&nbsp; 2-page spread</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Publication Design &nbsp;·&nbsp; 2025</span>
+          <h3>Retirement Spread</h3>
+          <p>Two-page tribute for an employee who dedicated nearly 60 years to the organization — a milestone worth celebrating right.</p>
+        </div>
+      </div>
+
+      <!-- ─── WEB DEVELOPMENT ─── -->
+      <div class="section-divider" data-section="web">
+        <div class="sd-label">Web Development</div>
+        <p class="sd-desc">Pages built from scratch in HTML/CSS — redesigns, event hubs, and the Royalty Blog program I conceived and created.</p>
+      </div>
+
+      <div class="portfolio-card web-card" data-category="web" data-url="https://spjst.org/about/archives/">
+        <img src="assets/web/Archive AFTER 1.png" alt="Digital Archives redesign" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-cat">Web Development</span>
+          <h3>Digital Archives Redesign</h3>
+          <p>Rebuilt SPJST's digital archive into a searchable, navigable resource covering 60+ years of history.</p>
+          <span class="web-visit-hint">Click to visit live page &#8599;</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card web-card" data-category="web" data-url="https://spjst.org/car-show/">
+        <img src="assets/web/Car Show Page.png" alt="Car Show event page" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-cat">Web Development</span>
+          <h3>Car Show Event Page</h3>
+          <p>Custom landing page with animated graphics, registration info, and cohesive branding for the annual Car Show.</p>
+          <span class="web-visit-hint">Click to visit live page &#8599;</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card web-card" data-category="web" data-url="https://spjst.org/programs/youth-programs/">
+        <img src="assets/web/Youth Program AFTER 1.png" alt="Youth Program hub redesign" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-cat">Web Development</span>
+          <h3>Youth Program Hub</h3>
+          <p>Converted a basic link list into a visual hub showcasing youth programs, upcoming events, and member opportunities.</p>
+          <span class="web-visit-hint">Click to visit live page &#8599;</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card web-card" data-category="web" data-url="https://spjst.org/royalty/">
+        <img src="assets/web/royaltyblog-web.png" alt="SPJST Royalty Program hub" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-cat">Web Development</span>
+          <h3>Royalty Program Hub</h3>
+          <p>Built from scratch — showcases the 2025–2026 royalty winners, event calendar, and program rules. Gateway to the Mr. &amp; Miss SPJST blogs.</p>
+          <span class="web-visit-hint">Click to visit live page &#8599;</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card web-card" data-category="web" data-url="https://spjst.org/miss/">
+        <img src="assets/web/miss-spjst-blogweb.png" alt="Miss SPJST royalty blog" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-cat">Web Development</span>
+          <h3>Miss SPJST Blog</h3>
+          <p>Royalty blog built from scratch — documents Miss SPJST's service project, events, and updates throughout her reign. My concept, my build.</p>
+          <span class="web-visit-hint">Click to visit live page &#8599;</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card web-card" data-category="web" data-url="https://spjst.org/129th-anniversary/">
+        <img src="assets/web/anniversary-webpage.png" alt="129th Anniversary event page" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-cat">Web Development</span>
+          <h3>129th Anniversary Event Page</h3>
+          <p>Custom event landing page built for the SPJST 129th Anniversary Celebration — full event details, schedule, and registration info.</p>
+          <span class="web-visit-hint">Click to visit live page &#8599;</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card web-card" data-category="web" data-url="https://spjst.org/webinar/">
+        <img src="assets/web/webinar-webpage.png" alt="SPJST Webinar page" loading="lazy">
+        <div class="card-overlay">
+          <span class="card-cat">Web Development</span>
+          <h3>Webinar Series Page</h3>
+          <p>New page built for an officer-led webinar series — clear layout with registration details, schedule, and promotional graphics I also designed.</p>
+          <span class="web-visit-hint">Click to visit live page &#8599;</span>
+        </div>
+      </div>
+
+      <!-- ─── GRAPHIC DESIGN ─── -->
+      <div class="section-divider" data-section="graphic">
+        <div class="sd-label">Graphic Design</div>
+        <p class="sd-desc">Promotional suites, branding systems, and print design — from event campaigns to full program books.</p>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="graphic" data-project="gala-gd">
+        <img src="assets/graphic-design/gala-social1.png" alt="2025 Czech National Day Texas Gala design" loading="lazy">
+        <div class="project-title-bar">
+          <h4>Czech National Day Texas Gala</h4>
+          <span>Social graphics · Web banner · Event raised $3,000</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Graphic Design &nbsp;·&nbsp; 2025</span>
+          <h3>Czech National Day Texas Gala</h3>
+          <p>Full event design suite for the CHM fundraising gala — social graphics, ticket promo, and web banner. Event raised $3,000 with strong attendance.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="graphic" data-project="carshow-gd">
+        <img src="assets/graphic-design/carshow-social1.png" alt="2026 Car Show design suite" loading="lazy">
+        <div class="project-title-bar">
+          <h4>2026 Car Show Design Suite</h4>
+          <span>Social graphics · T-shirt · Thank you cards · Header</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Graphic Design &nbsp;·&nbsp; 2026</span>
+          <h3>2026 Car Show Design Suite</h3>
+          <p>Full promotional package: social graphics, event header, t-shirt design, and thank you cards — cohesive branding from start to finish.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="graphic" data-project="svacina-gd">
+        <img src="assets/graphic-design/svacina-flyer.png" alt="Sunday Afternoon Svacina design set" loading="lazy">
+        <div class="project-title-bar">
+          <h4>Sunday Afternoon Svacina</h4>
+          <span>Flyer · Social post · Sign · Vestnik spread</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Graphic Design &nbsp;·&nbsp; 2025</span>
+          <h3>Sunday Afternoon Svacina</h3>
+          <p>Complete visual identity for a recurring CHM event — flyer, social graphic, outside sign, and matching Vestnik spread.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card pub-project-card" data-category="graphic" data-project="guidebook-2026">
+        <img src="assets/guidebook/2026-pg1.png" alt="2026 Showcase Guidebook redesign" loading="lazy">
+        <div class="project-title-bar">
+          <h4>2026 Showcase Guidebook</h4>
+          <span>27-page redesign &nbsp;·&nbsp; Has before &amp; after</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Graphic Design &nbsp;·&nbsp; 2026</span>
+          <h3>2026 Showcase Guidebook</h3>
+          <p>Full redesign of the annual Showcase program book — refreshed layout, typography, and visual system across 27 pages.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card web-card" data-category="graphic" data-url="assets/Social_Media_Calendar.pdf">
+        <div class="card-content-bg" style="width:100%;height:100%;background:var(--dark);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:28px;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#e8a0bf" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="14" x2="8" y2="14"/><line x1="12" y1="14" x2="12" y2="14"/><line x1="16" y1="14" x2="16" y2="14"/></svg>
+          <span style="font-family:'Playfair Display',serif;color:#fff;font-size:1rem;text-align:center;line-height:1.4;">2026 Social Media<br>Calendar &amp; Strategy</span>
+          <span style="font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);font-family:'Inter',sans-serif;">View PDF &#8599;</span>
+        </div>
+        <div class="card-overlay">
+          <span class="card-cat">Graphic Design &nbsp;·&nbsp; Strategy</span>
+          <h3>Social Media Calendar &amp; Overview</h3>
+          <p>Full 2026 social posting strategy — content pillars, posting cadence, platform breakdown, and campaign planning across the year.</p>
+          <span class="web-visit-hint">Click to open &#8599;</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PUBLICATION PROJECT MODAL ── -->
+  <div id="pub-modal" class="pub-modal" role="dialog" aria-modal="true">
+    <div class="pm-inner">
+      <div class="pm-header">
+        <div class="pm-header-left">
+          <span class="pm-cat-tag" id="pm-cat-tag">Publication Design</span>
+          <h3 id="pm-title"></h3>
+        </div>
+        <div class="pm-header-right">
+          <button class="pm-issuu-btn hidden" id="pm-issuu-btn">View Full Issue &#8599;</button>
+          <button class="pm-before-btn hidden" id="pm-before-btn">View Before</button>
+          <button class="pm-close-btn" id="pm-close-btn">&times;</button>
+        </div>
+      </div>
+      <div class="pm-description hidden" id="pm-description"></div>
+      <div class="pm-scroll" id="pm-scroll">
+        <!-- pages injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ── LIGHTBOX ── -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lb-close" id="lb-close" aria-label="Close">&times;</button>
+    <div class="lb-content">
+      <img id="lb-img" src="" alt="">
+    </div>
+    <button class="lb-prev" id="lb-prev" aria-label="Previous">&#8592;</button>
+    <button class="lb-next" id="lb-next" aria-label="Next">&#8594;</button>
+  </div>
+
+  <!-- ── RESUME ── -->
+  <section id="resume" class="section resume-section">
+    <div class="resume-inner">
+      <div class="resume-left">
+        <p class="section-tag">Resume</p>
+        <h2>The full picture.</h2>
+        <p>I'm a Digital Communications Coordinator who manages social strategy, publication design, web development, and video — all at once, all at a high level.</p>
+        <a href="assets/Kristen_Mikeska_Resume.pdf" download="Kristen_Mikeska_Resume.pdf" class="btn">Download Resume</a>
+      </div>
+      <div class="resume-right">
+        <div class="job-card">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Social Media Coordinator &amp; Publication Designer</div>
+              <div class="job-org">SPJST · Temple, TX</div>
+            </div>
+            <div class="job-date">Jan 2025 – Present</div>
+          </div>
+          <ul class="job-bullets">
+            <li>72K views in a single month (March 2026); 500% follower growth</li>
+            <li>111% Facebook views increase in 28 days; 402% interaction growth</li>
+            <li>Designed 20+ editions of the Vestnik (36,000+ circulation)</li>
+            <li>Rebuilt digital archive, Car Show page, and Youth Program hub in HTML/CSS</li>
+            <li>Produced 8-minute video screened live for 200+ attendees</li>
+          </ul>
+        </div>
+        <div class="job-card">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Museum Intern</div>
+              <div class="job-org">Czech Heritage Museum · Temple, TX</div>
+            </div>
+            <div class="job-date">Aug 2024 – Jan 2025</div>
+          </div>
+          <ul class="job-bullets">
+            <li>Digitized 60+ years of historical records into the archival system</li>
+            <li>Assisted visitors with genealogical research and collection navigation</li>
+            <li>Managed resource databases and supported exhibit organization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section contact-section">
+    <div class="contact-inner">
+      <p class="section-tag light">Contact</p>
+      <h2>Let's work together.</h2>
+      <p class="contact-sub">Whether you need a social strategist, a designer, a developer, or all three — I'm interested. Reach out any way that works for you.</p>
+      <div class="contact-links">
+        <a href="mailto:kristenmikeska03@gmail.com" class="contact-link">
+          <span class="contact-icon">&#9993;</span>
+          <span>kristenmikeska03@gmail.com</span>
+        </a>
+        <a href="tel:2548995053" class="contact-link">
+          <span class="contact-icon">&#9742;</span>
+          <span>(254) 899-5053</span>
+        </a>
+        <a href="https://www.linkedin.com/in/kristen-mikeska-6b60382b5" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon contact-icon-in">in</span>
+          <span>LinkedIn Profile</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&#169; 2026 Kristen Mikeska &nbsp;&middot;&nbsp; Built by hand in HTML &amp; CSS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

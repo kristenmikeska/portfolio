@@ -1482,7 +1482,8 @@ footer p {
   margin-bottom: 4px;
 }
 
-.pub-group-label.hidden {
+.pub-group-label.hidden,
+.web-group-label.hidden {
   display: none;
 }
 

@@ -450,6 +450,7 @@ const filterBtns      = document.querySelectorAll('.filter-btn');
 const portfolioCards  = document.querySelectorAll('.portfolio-card');
 const pubGroupLabels  = document.querySelectorAll('.pub-group-label');
 const sectionDividers = document.querySelectorAll('.section-divider');
+const webGroupLabels  = document.querySelectorAll('.web-group-label');
 
 function applyFilter(filter) {
   filterBtns.forEach(btn =>
@@ -460,6 +461,9 @@ function applyFilter(filter) {
   });
   pubGroupLabels.forEach(label =>
     label.classList.toggle('hidden', filter !== 'publication')
+  );
+  webGroupLabels.forEach(label =>
+    label.classList.toggle('hidden', filter !== 'all' && filter !== 'web')
   );
   sectionDividers.forEach(div => {
     div.classList.toggle('hidden', filter !== 'all' && div.dataset.section !== filter);

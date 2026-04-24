@@ -455,6 +455,57 @@ p {
   line-height: 1.5;
 }
 
+/* In Action photo strip */
+.in-action-strip {
+  grid-column: 1 / -1;
+  margin-top: 48px;
+  padding-top: 36px;
+  border-top: 1px solid #d4b0c8;
+}
+
+.in-action-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.in-action-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.in-action-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+.in-action-scroll::-webkit-scrollbar-track { background: #e8dff0; border-radius: 2px; }
+.in-action-scroll::-webkit-scrollbar-thumb { background: var(--pink-mid); border-radius: 2px; }
+
+.action-photo {
+  flex: 0 0 240px;
+  scroll-snap-align: start;
+}
+
+.action-photo img {
+  width: 240px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.action-photo p {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 /* Skills panel spans columns 2–3 on row 2 */
 .skills-panel {
   grid-column: 2 / 4;
@@ -1211,6 +1262,25 @@ footer p {
   color: #fff;
   font-size: 1.4rem;
   margin-bottom: 6px;
+}
+
+.showcase-live-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  border: 1.5px solid var(--pink);
+  color: var(--pink);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+  flex-shrink: 0;
+}
+
+.showcase-live-btn:hover {
+  background: var(--pink);
+  color: var(--dark);
 }
 
 .showcase-sub {

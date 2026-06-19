@@ -203,7 +203,9 @@ const projectData = {
   'guidebook-2026': {
     category: 'Graphic Design',
     title: '2026 Showcase Guidebook',
-    description: 'Full redesign of the annual Showcase program book — refreshed layout, typography, and visual system across 27 pages. Scroll through the full book below.',
+    description: 'Full redesign of the annual Showcase program book — refreshed layout, typography, and visual system across 27 pages. Scroll through the original redesign below, or download the latest updated version.',
+    issuu: 'assets/guidebook/guidebook-2026-updated.pdf',
+    issuuLabel: 'Download Updated PDF',
     pages: Array.from({ length: 27 }, (_, i) => `assets/guidebook/2026-pg${i + 1}.png`),
     before: Array.from({ length: 25 }, (_, i) => `assets/guidebook/before-pg${i + 1}.png`),
   },
@@ -234,8 +236,10 @@ const projectData = {
   },
   'graduates-2025': {
     category: 'Publication Design',
-    title: 'Graduates 2025',
+    title: 'Graduates',
+    description: 'Celebratory layouts honoring graduating members — portrait-driven with custom typographic styling. Includes both the 2025 and 2026 editions.',
     pages: [
+      'assets/vestnik/grad-layout-2026-pg1.png',
       'assets/vestnik/Graduates Spread 1.png',
       'assets/vestnik/Graduates Spread 2.png',
     ],
@@ -307,6 +311,29 @@ const projectData = {
     ],
   },
 
+  // ── NEW 2026 PUBLICATION ──
+  'royalty-contestants-2026': {
+    category: 'Publication Design',
+    title: 'Royalty Contestant Feature — 2026',
+    description: 'Before and after comparison of the royalty contestant feature spread — redesigned layout with more visual polish and better photo presentation.',
+    pages: ['assets/vestnik/royalty-contestants.png'],
+    before: ['assets/befores/royalty-contestants-before.png'],
+  },
+  // ── SOCIAL MEDIA INSIGHTS ──
+  'fb-insights': {
+    category: 'Social Media',
+    title: 'Facebook Insights: Jan–June 2026',
+    description: 'Real data from Meta Business Suite covering January through June 2026 — views, reach, page visits, interactions, and new follows. The platform evidence behind the growth numbers.',
+    pages: [
+      'assets/social/fb-views-2026.png',
+      'assets/social/fb-viewers-2026.png',
+      'assets/social/fb-visits-2026.png',
+      'assets/social/fb-interactions-2026.png',
+      'assets/social/fb-follows-2026.png',
+    ],
+    before: [],
+  },
+
   // ── GRAPHIC DESIGN ──
   'gala-gd': {
     category: 'Graphic Design',
@@ -344,6 +371,69 @@ const projectData = {
       'assets/graphic-design/svacina-social.png',
       'assets/graphic-design/svacina-sign.png',
       'assets/graphic-design/svacina-vestnik.png',
+    ],
+    before: [],
+  },
+  'joint-carshow': {
+    category: 'Graphic Design',
+    title: 'Joint Car Show Campaign — Buckholts & Turley',
+    description: 'Coordinated campaign for two SPJST car shows running at the same time: a car show held in conjunction with the Buckholts Cotton Festival, and SPJST\'s Car Show at Turley\'s 5th Annual BBQ Cookoff. I designed coordinated social posts, yard signs, and a shared website header for each event — and built the web page for both shows.',
+    pages: [
+      'assets/graphic-design/jointcarshow-header.png',
+      'assets/graphic-design/jointcarshow-joint-post.jpg',
+      'assets/graphic-design/jointcarshow-buckholts-post.jpg',
+      'assets/graphic-design/jointcarshow-buckholts-sign.png',
+      'assets/graphic-design/jointcarshow-turley-post.jpg',
+      'assets/graphic-design/jointcarshow-turley-sign.png',
+    ],
+    before: [],
+  },
+  'insurance-promos': {
+    category: 'Graphic Design',
+    title: 'Fillable Insurance Agent Promo Templates',
+    description: 'Six customizable promotional templates designed for SPJST insurance agents — fillable fields let each agent personalize with their own contact information and branding. Built for scalability across the agent network.',
+    pages: [
+      'assets/graphic-design/insurance-promo-1.png',
+      'assets/graphic-design/insurance-promo-2.png',
+      'assets/graphic-design/insurance-promo-3.png',
+      'assets/graphic-design/insurance-promo-4.png',
+      'assets/graphic-design/insurance-promo-5.png',
+      'assets/graphic-design/insurance-promo-6.png',
+    ],
+    before: [],
+  },
+  'marquee-signs': {
+    category: 'Graphic Design',
+    title: 'Marquee Sign Designs',
+    description: 'Digital marquee sign graphics for SPJST — designed for display on outdoor electronic signage. Clean, high-contrast layouts optimized for readability at a distance.',
+    pages: [
+      'assets/graphic-design/marquee-annuities.png',
+      'assets/graphic-design/marquee-lifeinsurance.png',
+      'assets/graphic-design/marquee-classof2026.png',
+    ],
+    before: [],
+  },
+  'showcase-categories': {
+    category: 'Graphic Design',
+    title: '2026 Showcase Category Highlight Graphics',
+    description: 'Category winner highlight graphics for the 2026 SPJST Youth Showcase — used across social media and print to announce results and celebrate participants in each division.',
+    pages: [
+      'assets/graphic-design/showcase-cat-photography.png',
+      'assets/graphic-design/showcase-cat-pictorialart.png',
+      'assets/graphic-design/showcase-cat-ornament.png',
+      'assets/graphic-design/showcase-cat-holidaycorner.png',
+      'assets/graphic-design/showcase-cat-dessert.png',
+      'assets/graphic-design/showcase-cat-science.png',
+    ],
+    before: [],
+  },
+  'webinar-gd': {
+    category: 'Graphic Design',
+    title: '"It\'s Not That Complicated" Webinar Graphics',
+    description: 'Promotional design assets for the SPJST officer webinar series — website header graphic and social media post. The live webinar landing page is in the Web Development section.',
+    pages: [
+      'assets/graphic-design/webinar-header.png',
+      'assets/graphic-design/webinar-social.jpg',
     ],
     before: [],
   },
@@ -385,6 +475,7 @@ function openPubModal(projectId) {
 
   if (data.issuu && pmIssuuBtn) {
     pmIssuuBtn.classList.remove('hidden');
+    pmIssuuBtn.textContent = (data.issuuLabel || 'View Full Issue') + ' ↗';
     pmIssuuBtn.onclick = () => window.open(data.issuu, '_blank', 'noopener');
   } else if (pmIssuuBtn) {
     pmIssuuBtn.classList.add('hidden');
